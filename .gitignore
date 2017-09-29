@@ -1,0 +1,6 @@
+**/__pycache__
+**/.idea
+env
+doc
+syspy/tests/data/out
+.cache/*
