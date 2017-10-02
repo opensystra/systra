@@ -11,7 +11,6 @@ import networkx as nx
 
 from tqdm import tqdm
 
-from syspy.syspy_utils import neighbors
 from syspy import spatial
 
 
@@ -26,7 +25,7 @@ def non_terminal_intersections(graph, n_neighbors=100):
     geometry_list = list(geometry_dict.items())
     intersections = {key: set() for key in geometry_dict.keys()}
 
-    nearest_lines = neighbors.nearest(
+    nearest_lines = spatial.spatial.nearest(
         graph,
         graph,
         n_neighbors=n_neighbors
